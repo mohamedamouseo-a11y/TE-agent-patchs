@@ -1,0 +1,31 @@
+{
+  "id": "teagent-phase-00-developer-hub",
+  "name": "Super Admin Developer Hub",
+  "version": "1.0.0",
+  "target": "TEAgent",
+  "phase": "00",
+  "entrypoint": "OPENHANDS_PROMPT.md",
+  "specification": "README.md",
+  "apiContract": "contracts/developer-hub-api.md",
+  "testChecklist": "TEST_CHECKLIST.md",
+  "rollback": "rollback/ROLLBACK.md",
+  "policy": {
+    "superAdminOnly": true,
+    "featureBranchByDefault": true,
+    "allowDirectDefaultBranchPush": false,
+    "allowForcePush": false,
+    "allowArbitraryShell": false,
+    "allowAutomaticLiveDeploy": false,
+    "requireExpectedHeadForMutations": true,
+    "requireChecksBeforePublication": true,
+    "redactSecrets": true,
+    "auditMutations": true
+  },
+  "suggestedConfig": {
+    "DEVELOPER_HUB_ENABLED": "true",
+    "DEVELOPER_HUB_REPO_PATH": "/path/to/teagent",
+    "DEVELOPER_HUB_REMOTE": "origin",
+    "DEVELOPER_HUB_DEFAULT_BRANCH": "main",
+    "DEVELOPER_HUB_ALLOW_DIRECT_PUSH": "false"
+  }
+}
