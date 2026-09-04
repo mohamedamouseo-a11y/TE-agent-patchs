@@ -1,0 +1,33 @@
+{
+  "id": "TEA_DEVELOPER_HUB_TCRM_V1",
+  "version": "1.0.0",
+  "target": "TEA",
+  "targetServer": "158.220.119.80",
+  "targetPath": "/opt/TBA",
+  "targetDomain": "https://tea.tamiyouz.com",
+  "reference": {
+    "repository": "mohamedamouseo-a11y/TCRM-MAIN-Tamiyouz-CRM-",
+    "commit": "78273711727e834ca88029e39ff0f6ae302d427a",
+    "ui": "client/src/components/DeveloperHubTab.tsx",
+    "backend": "server/routes/developerHub.ts"
+  },
+  "policy": {
+    "superAdminOnly": true,
+    "serverSideAuthorization": true,
+    "humanGitWritesOnly": true,
+    "agentAutoGit": false,
+    "forcePush": false,
+    "destructiveResetClean": false,
+    "arbitraryShellUi": false,
+    "credentialsServerSide": true,
+    "reviewBeforeExecute": true,
+    "auditWrites": true,
+    "operationRecovery": true,
+    "developerHubAutoRestartDeploy": false,
+    "changeArchitecture": false,
+    "changeDependencies": false,
+    "changePortsOrProxy": false
+  },
+  "entrypoint": "OPENHANDS_TASK.md",
+  "verification": "VERIFY.md"
+}
